@@ -1,0 +1,33 @@
+[debug] [zinc] IncrementalCompile -----------
+[debug] IncrementalCompile.incrementalCompile
+[debug] previous = Stamps for: 3 products, 1 sources, 1 libraries
+[debug] current source = Set(${BASE}/src/main/scala/Week2/Main.scala)
+[debug] > initialChanges = InitialChanges(Changes(added = Set(${BASE}/src/main/scala/Week2/Main.scala), removed = Set(${BASE}/src/main/scala/Main.scala), changed = Set(), unmodified = ...),Set(${BASE}/target/scala-2.13/classes/Main$.class, ${BASE}/target/scala-2.13/classes/Main$delayedInit$body.class, ${BASE}/target/scala-2.13/classes/Main.class),Set(),API Changes: Set())
+[debug] 
+[debug] Initial source changes:
+[debug] 	removed: Set(${BASE}/src/main/scala/Main.scala)
+[debug] 	added: Set(${BASE}/src/main/scala/Week2/Main.scala)
+[debug] 	modified: Set()
+[debug] Invalidated products: Set(${BASE}/target/scala-2.13/classes/Main$.class, ${BASE}/target/scala-2.13/classes/Main$delayedInit$body.class, ${BASE}/target/scala-2.13/classes/Main.class)
+[debug] External API changes: API Changes: Set()
+[debug] Modified binary dependencies: Set()
+[debug] Initial directly invalidated classes: Set(Main)
+[debug] Sources indirectly invalidated by:
+[debug] 	product: Set(${BASE}/src/main/scala/Main.scala)
+[debug] 	binary dep: Set()
+[debug] 	external source: Set()
+[debug] All initially invalidated classes: Set(Main)
+[debug] All initially invalidated sources:Set(${BASE}/src/main/scala/Week2/Main.scala, ${BASE}/src/main/scala/Main.scala)
+[debug] Initial set of included nodes: Main
+[debug] Recompiling all sources: number of invalidated sources > 50.0% of all sources
+[debug] compilation cycle 1
+[info] compiling 1 Scala source to D:\ScalaProjects\ScalaIntro\target\scala-2.13\classes ...
+[debug] Getting org.scala-sbt:compiler-bridge_2.13:1.4.4:compile for Scala 2.13.4
+[debug] [zinc] Running cached compiler 852bc67 for Scala compiler version 2.13.4
+[debug] [zinc] The Scala compiler is invoked with:
+[debug] 	-bootclasspath
+[debug] 	C:\Users\yekat\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.4\scala-library-2.13.4.jar
+[debug] 	-classpath
+[debug] 	D:\ScalaProjects\ScalaIntro\target\scala-2.13\classes
+[debug] Scala compilation took 4.0590871 s
+[info] done compiling

@@ -1,0 +1,11 @@
+[debug] Packaging D:\ScalaProjects\ScalaIntro\target\scala-2.13\scalaintro_2.13-0.1.jar ...
+[debug] Input file mappings:
+[debug] 	Week2
+[debug] 	  D:\ScalaProjects\ScalaIntro\target\scala-2.13\classes\Week2
+[debug] 	Week2\Main$.class
+[debug] 	  D:\ScalaProjects\ScalaIntro\target\scala-2.13\classes\Week2\Main$.class
+[debug] 	Week2\Main$delayedInit$body.class
+[debug] 	  D:\ScalaProjects\ScalaIntro\target\scala-2.13\classes\Week2\Main$delayedInit$body.class
+[debug] 	Week2\Main.class
+[debug] 	  D:\ScalaProjects\ScalaIntro\target\scala-2.13\classes\Week2\Main.class
+[debug] Done packaging.
