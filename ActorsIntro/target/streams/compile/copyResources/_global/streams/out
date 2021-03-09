@@ -1,0 +1,3 @@
+[debug] Copy resource mappings: 
+[debug] 	(D:\ScalaProjects\ChatRoom\src\main\resources\application.conf,D:\ScalaProjects\ChatRoom\target\scala-2.13\classes\application.conf)
+[debug] 	(D:\ScalaProjects\ChatRoom\src\main\resources\logback.xml,D:\ScalaProjects\ChatRoom\target\scala-2.13\classes\logback.xml)
