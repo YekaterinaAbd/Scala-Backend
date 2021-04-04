@@ -1,0 +1,47 @@
+[debug] Packaging D:\ScalaProjects\untitled1\target\scala-2.12\untitled1_2.12-0.1.jar ...
+[debug] Input file mappings:
+[debug] 	application.conf
+[debug] 	  D:\ScalaProjects\untitled1\target\scala-2.12\classes\application.conf
+[debug] 	Boot$.class
+[debug] 	  D:\ScalaProjects\untitled1\target\scala-2.12\classes\Boot$.class
+[debug] 	Boot$delayedInit$body.class
+[debug] 	  D:\ScalaProjects\untitled1\target\scala-2.12\classes\Boot$delayedInit$body.class
+[debug] 	Boot.class
+[debug] 	  D:\ScalaProjects\untitled1\target\scala-2.12\classes\Boot.class
+[debug] 	Calculator$.class
+[debug] 	  D:\ScalaProjects\untitled1\target\scala-2.12\classes\Calculator$.class
+[debug] 	Calculator.class
+[debug] 	  D:\ScalaProjects\untitled1\target\scala-2.12\classes\Calculator.class
+[debug] 	CalculatorRepository.class
+[debug] 	  D:\ScalaProjects\untitled1\target\scala-2.12\classes\CalculatorRepository.class
+[debug] 	CalculatorRepositoryImpl.class
+[debug] 	  D:\ScalaProjects\untitled1\target\scala-2.12\classes\CalculatorRepositoryImpl.class
+[debug] 	InMemoryToDoRepository$.class
+[debug] 	  D:\ScalaProjects\untitled1\target\scala-2.12\classes\InMemoryToDoRepository$.class
+[debug] 	InMemoryToDoRepository.class
+[debug] 	  D:\ScalaProjects\untitled1\target\scala-2.12\classes\InMemoryToDoRepository.class
+[debug] 	logback.xml
+[debug] 	  D:\ScalaProjects\untitled1\target\scala-2.12\classes\logback.xml
+[debug] 	Router.class
+[debug] 	  D:\ScalaProjects\untitled1\target\scala-2.12\classes\Router.class
+[debug] 	ToDo$.class
+[debug] 	  D:\ScalaProjects\untitled1\target\scala-2.12\classes\ToDo$.class
+[debug] 	ToDo.class
+[debug] 	  D:\ScalaProjects\untitled1\target\scala-2.12\classes\ToDo.class
+[debug] 	TodoRepository.class
+[debug] 	  D:\ScalaProjects\untitled1\target\scala-2.12\classes\TodoRepository.class
+[debug] 	ToDoRouter$anon$importedEncoder$macro$154$1$$anon$1.class
+[debug] 	  D:\ScalaProjects\untitled1\target\scala-2.12\classes\ToDoRouter$anon$importedEncoder$macro$154$1$$anon$1.class
+[debug] 	ToDoRouter$anon$importedEncoder$macro$154$1$$anon$2.class
+[debug] 	  D:\ScalaProjects\untitled1\target\scala-2.12\classes\ToDoRouter$anon$importedEncoder$macro$154$1$$anon$2.class
+[debug] 	ToDoRouter$anon$importedEncoder$macro$154$1$anon$macro$152$1.class
+[debug] 	  D:\ScalaProjects\untitled1\target\scala-2.12\classes\ToDoRouter$anon$importedEncoder$macro$154$1$anon$macro$152$1.class
+[debug] 	ToDoRouter$anon$importedEncoder$macro$154$1.class
+[debug] 	  D:\ScalaProjects\untitled1\target\scala-2.12\classes\ToDoRouter$anon$importedEncoder$macro$154$1.class
+[debug] 	ToDoRouter.class
+[debug] 	  D:\ScalaProjects\untitled1\target\scala-2.12\classes\ToDoRouter.class
+[debug] 	ToDoServer$.class
+[debug] 	  D:\ScalaProjects\untitled1\target\scala-2.12\classes\ToDoServer$.class
+[debug] 	ToDoServer.class
+[debug] 	  D:\ScalaProjects\untitled1\target\scala-2.12\classes\ToDoServer.class
+[debug] Done packaging.

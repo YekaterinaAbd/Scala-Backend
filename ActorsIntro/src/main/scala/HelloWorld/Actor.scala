@@ -1,0 +1,5 @@
+package HelloWorld
+
+object Actor {
+
+}

@@ -1,0 +1,14 @@
+[debug] > Exec(run, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 7 Scala sources to D:\ScalaProjects\untitled1\target\scala-2.12\classes ...
+[error] D:\ScalaProjects\untitled1\src\main\scala\Boot.scala:21:18: not enough arguments for constructor ToDoRouter: (todoRepository: TodoRepository, calculatorRepository: CalculatorRepository)(implicit system: akka.actor.typed.ActorSystem[_], implicit ex: scala.concurrent.ExecutionContext)ToDoRouter.
+[error] Unspecified value parameter calculatorRepository.
+[error]     val router = new ToDoRouter(todos)
+[error]                  ^
+[error] one error found
+[error] (Compile / compileIncremental) Compilation failed
+[error] Total time: 6 s, completed 04.04.2021 19:07:29
+[debug] > Exec(idea-shell, None, None)
+[debug] > Exec(, None, None)
+[debug] > Exec(idea-shell, None, None)
