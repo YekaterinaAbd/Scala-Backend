@@ -1,4 +1,4 @@
-name := "untitled1"
+name := "todosproject"
 
 version := "0.1"
 

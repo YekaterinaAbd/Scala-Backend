@@ -1,0 +1,15 @@
+[debug] > Exec(run, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 11 Scala sources to D:\ScalaProjects\ToDoProject\target\scala-2.12\classes ...
+[error] D:\ScalaProjects\ToDoProject\src\main\scala\TodoDirectives.scala:10:74: missing parameter type for expanded function
+[error] The argument types of an anonymous function must be fully known. (SLS 8.5)
+[error] Expected type was: akka.http.scaladsl.server.Directive1[T]
+[error]   def handle[T](f: Future[T])(e: Throwable => ApiError): Directive1[T] = {
+[error]                                                                          ^
+[error] one error found
+[error] (Compile / compileIncremental) Compilation failed
+[error] Total time: 28 s, completed 13.04.2021 21:19:12
+[debug] > Exec(idea-shell, None, None)
+[debug] > Exec(, None, None)
+[debug] > Exec(idea-shell, None, None)

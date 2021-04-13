@@ -1,0 +1,22 @@
+[debug] > Exec(run, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to D:\ScalaProjects\ToDoProject\target\scala-2.12\classes ...
+[error] D:\ScalaProjects\ToDoProject\src\main\scala\Router.scala:36:77: type mismatch;
+[error]  found   : akka.http.scaladsl.server.StandardRoute
+[error]  required: ApiError
+[error]                 handle(todoRepository.create(createTodo)) { todo => complete(todo) }
+[error]                                                                             ^
+[error] D:\ScalaProjects\ToDoProject\src\main\scala\Router.scala:36:23: type mismatch;
+[error]  found   : akka.http.scaladsl.server.Directive1[ToDo]
+[error]     (which expands to)  akka.http.scaladsl.server.Directive[(ToDo,)]
+[error]  required: akka.http.scaladsl.server.Route
+[error]     (which expands to)  akka.http.scaladsl.server.RequestContext => scala.concurrent.Future[akka.http.scaladsl.server.RouteResult]
+[error]                 handle(todoRepository.create(createTodo)) { todo => complete(todo) }
+[error]                       ^
+[error] two errors found
+[error] (Compile / compileIncremental) Compilation failed
+[error] Total time: 14 s, completed 13.04.2021 22:43:26
+[debug] > Exec(idea-shell, None, None)
+[debug] > Exec(, None, None)
+[debug] > Exec(idea-shell, None, None)
