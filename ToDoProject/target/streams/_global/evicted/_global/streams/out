@@ -1,0 +1,15 @@
+[0m[[0m[0mdebug[0m] [0m[0mnot up to date. inChanged = true, force = true[0m
+[0m[[0m[0mdebug[0m] [0m[0mUpdating ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone updating [0m
+[0m[[0m[33mwarn[0m] [0m[0mFound version conflict(s) in library dependencies; some are suspected to be binary incompatible:[0m
+[0m[[0m[33mwarn[0m] [0m[0m	* com.typesafe.akka:akka-http_2.12:10.2.4 is selected over 10.1.1[0m
+[0m[[0m[33mwarn[0m] [0m[0m	    +- todosproject:todosproject_2.12:0.1                 (depends on 10.2.4)[0m
+[0m[[0m[33mwarn[0m] [0m[0m	    +- de.heikoseeberger:akka-http-circe_2.12:1.21.0      (depends on 10.1.1)[0m
+[0m[[0m[33mwarn[0m] [0m[0m	* com.typesafe.akka:akka-stream_2.12:2.6.8 is selected over 2.5.12[0m
+[0m[[0m[33mwarn[0m] [0m[0m	    +- todosproject:todosproject_2.12:0.1                 (depends on 2.6.8)[0m
+[0m[[0m[33mwarn[0m] [0m[0m	    +- de.heikoseeberger:akka-http-circe_2.12:1.21.0      (depends on 2.5.12)[0m
+[0m[[0m[0minfo[0m] [0m[0mHere are other dependency conflicts that were resolved:[0m
+[0m[[0m[0minfo[0m] [0m[0m	* org.slf4j:slf4j-api:1.7.30 is selected over 1.7.25[0m
+[0m[[0m[0minfo[0m] [0m[0m	    +- com.typesafe.akka:akka-actor-typed_2.12:2.6.8      (depends on 1.7.30)[0m
+[0m[[0m[0minfo[0m] [0m[0m	    +- com.typesafe.akka:akka-slf4j_2.12:2.6.8            (depends on 1.7.30)[0m
+[0m[[0m[0minfo[0m] [0m[0m	    +- ch.qos.logback:logback-classic:1.2.3               (depends on 1.7.25)[0m

@@ -41,7 +41,7 @@ class ToDoRouter(todoRepository: TodoRepository, calculatorRepository: Calculato
           put {
             entity(as[UpdateTodo]) { updateTodo => {
               validateWith(UpdateTodoValidator)(updateTodo) {
-                handleWithGeneric(todoRepository.update(updateTodo)) { todo =>
+                handle(todoRepository.update(updateTodo)) { todo =>
                   complete(todo)
                 }
               }

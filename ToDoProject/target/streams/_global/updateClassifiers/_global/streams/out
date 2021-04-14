@@ -1,4 +1,4 @@
 [debug] not up to date. inChanged = true, force = false
-[debug] Updating ProjectRef(uri("file:/D:/ScalaProjects/ToDoProject/"), "todoproject")...
-[debug] Done updating ProjectRef(uri("file:/D:/ScalaProjects/ToDoProject/"), "todoproject")
+[debug] Updating ProjectRef(uri("file:/D:/ScalaBackendNew/ToDoProject/"), "todoproject")...
+[debug] Done updating ProjectRef(uri("file:/D:/ScalaBackendNew/ToDoProject/"), "todoproject")
 [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
