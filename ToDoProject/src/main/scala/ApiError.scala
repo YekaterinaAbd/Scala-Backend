@@ -12,4 +12,5 @@ object ApiError {
   val emptyDescriptionField: ApiError = new ApiError(StatusCodes.BadRequest, "Empty description.")
   val emptyStatusField: ApiError = new ApiError(StatusCodes.BadRequest, "Empty status.")
   val duplicateTitleField: ApiError = new ApiError(StatusCodes.BadRequest, "Title already exists.")
+  val toDoNotFound: ApiError = new ApiError(StatusCodes.NotFound, "ToDo with this ID is not found.")
 }

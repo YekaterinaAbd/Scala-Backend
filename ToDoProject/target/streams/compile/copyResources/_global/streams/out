@@ -1,3 +1,3 @@
-[debug] Copy resource mappings: 
-[debug] 	(D:\ScalaProjects\ToDoProject\src\main\resources\application.conf,D:\ScalaProjects\ToDoProject\target\scala-2.12\classes\application.conf)
-[debug] 	(D:\ScalaProjects\ToDoProject\src\main\resources\logback.xml,D:\ScalaProjects\ToDoProject\target\scala-2.12\classes\logback.xml)
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(D:\ScalaBackendNew\ToDoProject\src\main\resources\application.conf,D:\ScalaBackendNew\ToDoProject\target\scala-2.12\classes\application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(D:\ScalaBackendNew\ToDoProject\src\main\resources\logback.xml,D:\ScalaBackendNew\ToDoProject\target\scala-2.12\classes\logback.xml)[0m

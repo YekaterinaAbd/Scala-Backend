@@ -19,13 +19,13 @@ trait TodoDirectives extends Directives {
     case Success(t) =>
       provide(t)
     case Failure(error) =>
-      val apiError = if (error.getMessage == "Title already exists.") ApiError.duplicateTitleField
-      else ApiError.generic
+      val apiError = error match {
+        case a: TodoRepository.TitleAlreadyExists => ApiError.duplicateTitleField
+        case b: TodoRepository.TodoNotFound => ApiError.toDoNotFound
+        case _ => ApiError.generic
+      }
       complete(apiError.statusCode, apiError.message)
   }
-
-  //  def handleDuplicateTitle[T](f: Future[T]): Directive1[T] =
-  //    handle[T](f)(_ => ApiError.duplicateTitleField)
 
   def handleWithGeneric[T](f: Future[T]): Directive1[T] =
     handleThrowable[T](f)(_ => ApiError.generic)
