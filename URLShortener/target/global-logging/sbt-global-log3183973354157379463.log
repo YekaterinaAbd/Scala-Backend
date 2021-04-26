@@ -1,0 +1,103 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(early(addPluginSbtFile="""C:\Users\yekat\AppData\Local\Temp\idea1.sbt"""), None, None)
+[debug] > Exec(addPluginSbtFile="""C:\Users\yekat\AppData\Local\Temp\idea1.sbt""", None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.4.7 (Amazon.com Inc. Java 1.8.0_282)
+[debug]       Load.loadUnit: plugins took 115.1029ms
+[debug]       Load.loadUnit: defsScala took 0.3452ms
+[debug] [Loading] Scanning directory C:\Users\yekat\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\yekat\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 35.3155 ms
+[debug]           Load.resolveProject(global-plugins) took 60.1851ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\yekat\.sbt\1.0\plugins, plugins: List(<none>))) took 133.5191ms
+[debug] [Loading] Done in C:\Users\yekat\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 161.9578ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.3003ms
+[debug]     Load.loadUnit(file:/C:/Users/yekat/.sbt/1.0/plugins/, ...) took 287.5573ms
+[debug]   Load.apply: load took 507.499ms
+[debug]   Load.apply: resolveProjects took 7.9564ms
+[debug]   Load.apply: finalTransforms took 92.18ms
+[debug]   Load.apply: config.delegates took 13.9317ms
+[debug]   Load.apply: Def.make(settings)... took 1066.7887ms
+[debug]   Load.apply: structureIndex took 150.0455ms
+[debug]   Load.apply: mkStreams took 2.9202ms
+[info] loading global plugins from C:\Users\yekat\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 4465.3495ms
+[debug]           Load.loadUnit: plugins took 32.1366ms
+[debug]           Load.loadUnit: defsScala took 0.0043ms
+[debug] [Loading] Scanning directory D:\ScalaBackendNew\URLShortener\project
+[debug]             Load.loadUnit: mkEval took 9.2991ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in D:\ScalaBackendNew\URLShortener\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 5.131 ms
+[info] loading settings for project urlshortener-build from idea1.sbt ...
+[debug]               Load.resolveProject(urlshortener-build) took 10.4948ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id urlshortener-build, base: D:\ScalaBackendNew\URLShortener\project, plugins: List(<none>))) took 16.2161ms
+[debug] [Loading] Done in D:\ScalaBackendNew\URLShortener\project, returning: (urlshortener-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 3160.192ms
+[debug]           Load.loadUnit: cleanEvalClasses took 4.6068ms
+[debug]         Load.loadUnit(file:/D:/ScalaBackendNew/URLShortener/project/, ...) took 3198.0892ms
+[debug]       Load.apply: load took 3199.9342ms
+[debug]       Load.apply: resolveProjects took 0.3936ms
+[debug]       Load.apply: finalTransforms took 14.9531ms
+[debug]       Load.apply: config.delegates took 0.4932ms
+[debug]       Load.apply: Def.make(settings)... took 119.8183ms
+[debug]       Load.apply: structureIndex took 41.9074ms
+[debug]       Load.apply: mkStreams took 0.0031ms
+[info] loading project definition from D:\ScalaBackendNew\URLShortener\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 5163.6702ms
+[debug]     Load.loadUnit: defsScala took 0.006ms
+[debug] [Loading] Scanning directory D:\ScalaBackendNew\URLShortener
+[debug]       Load.loadUnit: mkEval took 0.5047ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in D:\ScalaBackendNew\URLShortener, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.StructurePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.IdeaShellPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.StructurePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.IdeaShellPlugin))), Clause(And(Set(Atom(sbt.plugins.CorePlugin), Atom(sbt.plugins.JvmPlugin))),Set(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.SemanticdbPlugin,org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin,sbt.plugins.JUnitXmlReportPlugin,org.jetbrains.sbt.IdeaShellPlugin,org.jetbrains.sbt.StructurePlugin,sbt.plugins.MiniDependencyTreePlugin)
+[debug] Plugins.deducer#function took 3.0935 ms
+[info] loading settings for project urlshortener from build.sbt ...
+[debug]         Load.resolveProject(urlshortener) took 34.5133ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id urlshortener, base: D:\ScalaBackendNew\URLShortener, plugins: List(<none>))) took 39.1248ms
+[debug] [Loading] Done in D:\ScalaBackendNew\URLShortener, returning: (urlshortener)
+[debug]     Load.loadUnit: loadedProjectsRaw took 1976.1223ms
+[debug]     Load.loadUnit: cleanEvalClasses took 15.6401ms
+[debug]   Load.loadUnit(file:/D:/ScalaBackendNew/URLShortener/, ...) took 7156.3339ms
+[debug] Load.apply: load took 7158.0491ms
+[debug] Load.apply: resolveProjects took 0.1694ms
+[debug] Load.apply: finalTransforms took 28.7752ms
+[debug] Load.apply: config.delegates took 0.3505ms
+[debug] Load.apply: Def.make(settings)... took 107.4842ms
+[debug] Load.apply: structureIndex took 44.5922ms
+[debug] Load.apply: mkStreams took 0.0031ms
+[info] set current project to URLShortener (in build file:/D:/ScalaBackendNew/URLShortener/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(; set ideaPort in Global := 52021 ; idea-shell, None, None)
+[debug] > Exec(set ideaPort in Global := 52021, None, None)
+[info] Defining Global / ideaPort
+[info] The new value will be used by Compile / compile, Test / compile
+[debug] Defining 
+[debug] 	Global / ideaPort
+[debug] 
+[debug] The new value will be used by 
+[debug] 	Compile / compile
+[debug] 	Test / compile
+[info] Reapplying settings...
+[info] set current project to URLShortener (in build file:/D:/ScalaBackendNew/URLShortener/)
+[debug] > Exec(idea-shell, None, None)

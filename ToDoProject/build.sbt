@@ -2,10 +2,10 @@ import com.typesafe.sbt.packager.docker.ExecCmd
 
 enablePlugins(JavaAppPackaging, AshScriptPlugin)
 
-name := "todosproject"
+name := "todoscalaproject"
 
 dockerBaseImage := "openjdk:8-jre-alpine"
-packageName in Docker := "todosproject"
+packageName in Docker := "todoscalaproject"
 
 
 version := "0.1"
@@ -41,8 +41,15 @@ libraryDependencies ++= Seq(
 
 dockerCommands := dockerCommands.value.map {
   case ExecCmd("CMD", _ @ _*) =>
-    ExecCmd("CMD", "/opt/docker/bin/todosproject")
+    ExecCmd("CMD", "/opt/docker/bin/todoscalaproject")
   case other =>
     other
 }
+
+//.\deploy.sh todoscalaproject f8768fdbb0b1 349a0f69-7e70-4e39-9e64-0fe6383a7d76
+
+//local
+//docker run -d -p 9000:9000 todoscalaproject:0.1
+
+
 
