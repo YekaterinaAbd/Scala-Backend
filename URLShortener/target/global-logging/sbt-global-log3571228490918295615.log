@@ -1,0 +1,19 @@
+[debug] > Exec(run, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 8 Scala sources to D:\ScalaBackendNew\URLShortener\target\scala-2.13\classes ...
+[error] D:\ScalaBackendNew\URLShortener\src\main\scala\LocalUrlRepository.scala:32:55: not enough arguments for method apply: (i: Int): Char in class StringOps.
+[error] Unspecified value parameter i.
+[error]         creationDate = Option(Utils.getCurrentDateTime())
+[error]                                                       ^
+[error] D:\ScalaBackendNew\URLShortener\src\main\scala\UrlRouter.scala:25:37: type mismatch;
+[error]  found   : scala.concurrent.Future[Seq[Url]]
+[error]  required: akka.http.scaladsl.marshalling.ToResponseMarshallable
+[error]           complete(repository.getAll())
+[error]                                     ^
+[error] two errors found
+[error] (Compile / compileIncremental) Compilation failed
+[error] Total time: 2 s, completed 26.04.2021 23:17:39
+[debug] > Exec(idea-shell, None, None)
+[debug] > Exec(, None, None)
+[debug] > Exec(idea-shell, None, None)

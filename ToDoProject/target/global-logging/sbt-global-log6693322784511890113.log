@@ -1,0 +1,13 @@
+[debug] > Exec(run, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 4 Scala sources to D:\ScalaBackendNew\ToDoProject\target\scala-2.12\classes ...
+[error] D:\ScalaBackendNew\ToDoProject\src\main\scala\url\LocalUrlRepository.scala:3:8: not found: object LocalUrlRepository
+[error] import LocalUrlRepository.InvalidURL
+[error]        ^
+[error] one error found
+[error] (Compile / compileIncremental) Compilation failed
+[error] Total time: 12 s, completed 26.04.2021 23:52:56
+[debug] > Exec(idea-shell, None, None)
+[debug] > Exec(, None, None)
+[debug] > Exec(idea-shell, None, None)

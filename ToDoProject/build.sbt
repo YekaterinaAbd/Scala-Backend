@@ -37,6 +37,8 @@ libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "3.0.5" % Test,
 
   "ch.qos.logback" % "logback-classic" % "1.2.3",
+
+  "net.debasishg" %% "redisclient" % "3.30",
 )
 
 dockerCommands := dockerCommands.value.map {
@@ -50,6 +52,8 @@ dockerCommands := dockerCommands.value.map {
 
 //local
 //docker run -d -p 9000:9000 todoscalaproject:0.1
+
+// https://todoscalaproject.herokuapp.com/todos
 
 
 

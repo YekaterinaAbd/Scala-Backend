@@ -1,0 +1,1 @@
+[error] insecure HTTP request is unsupported 'http://dl.john-ky.io/maven/releases'; switch to HTTPS or opt-in as ("dl-john-ky-releases" at "http://dl.john-ky.io/maven/releases").withAllowInsecureProtocol(true), or by using allowInsecureProtocol in repositories file

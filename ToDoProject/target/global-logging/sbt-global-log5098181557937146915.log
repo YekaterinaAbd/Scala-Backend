@@ -1,0 +1,20 @@
+[debug] > Exec(run, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 3 Scala sources to D:\ScalaBackendNew\ToDoProject\target\scala-2.12\classes ...
+[error] D:\ScalaBackendNew\ToDoProject\src\main\scala\url\LocalUrlRepository.scala:34:34: Java class java.lang.Throwable is not a value
+[error]       case None => Future.failed(Throwable)
+[error]                                  ^
+[warn] D:\ScalaBackendNew\ToDoProject\src\main\scala\url\UrlRoute.scala:10:13: imported `CreateUrl' is permanently hidden by definition of object CreateUrl in package url
+[warn] import url.{CreateUrl, LocalUrlRepository}
+[warn]             ^
+[warn] D:\ScalaBackendNew\ToDoProject\src\main\scala\url\UrlRoute.scala:10:24: imported `LocalUrlRepository' is permanently hidden by definition of trait LocalUrlRepository in package url
+[warn] import url.{CreateUrl, LocalUrlRepository}
+[warn]                        ^
+[warn] two warnings found
+[error] one error found
+[error] (Compile / compileIncremental) Compilation failed
+[error] Total time: 14 s, completed 27.04.2021 1:48:02
+[debug] > Exec(idea-shell, None, None)
+[debug] > Exec(, None, None)
+[debug] > Exec(idea-shell, None, None)
