@@ -80,5 +80,20 @@
             <artifactId>logback-classic</artifactId>
             <version>1.2.3</version>
         </dependency>
+        <dependency>
+            <groupId>net.debasishg</groupId>
+            <artifactId>redisclient_2.12</artifactId>
+            <version>3.30</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mongodb.scala</groupId>
+            <artifactId>mongo-scala-driver_2.12</artifactId>
+            <version>2.9.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.monix</groupId>
+            <artifactId>shade_2.12</artifactId>
+            <version>1.10.0</version>
+        </dependency>
     </dependencies>
 </project>

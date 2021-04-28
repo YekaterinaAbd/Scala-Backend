@@ -1,36 +1,35 @@
 [0m[[0m[0mdebug[0m] [0m[0mExecuting Native docker build --force-rm -t todoscalaproject:0.1 .[0m
 [0m[[0m[0mdebug[0m] [0m[0mWorking directory D:\ScalaBackendNew\ToDoProject\target\docker\stage[0m
 [0m[[0m[31merror[0m] [0m[0m#1 [internal] load build definition from Dockerfile[0m
-[0m[[0m[31merror[0m] [0m[0m#1 sha256:0736e817381248a783a99df621c9ec8fe76f944927ba959a4e1e5436eca40ef3[0m
-[0m[[0m[31merror[0m] [0m[0m#1 transferring dockerfile: 221B 0.1s done[0m
-[0m[[0m[31merror[0m] [0m[0m#1 DONE 0.2s[0m
+[0m[[0m[31merror[0m] [0m[0m#1 sha256:723ac8a0a64d7969d0921156de3c42401c36c5ab3c193bcf7bff8f9162753763[0m
+[0m[[0m[31merror[0m] [0m[0m#1 transferring dockerfile: 221B done[0m
+[0m[[0m[31merror[0m] [0m[0m#1 DONE 0.0s[0m
 [0m[[0m[31merror[0m] [0m[0m#2 [internal] load .dockerignore[0m
-[0m[[0m[31merror[0m] [0m[0m#2 sha256:24aef6ec6d68a5f4a03eb7e0e3e7757067ece259e155b3b53241dc6d5e143d79[0m
+[0m[[0m[31merror[0m] [0m[0m#2 sha256:5e141420522bb2dbf27bf596f9709799d6cc80350c7a22b32421ce9aadc5af9c[0m
 [0m[[0m[31merror[0m] [0m[0m#2 transferring context: 2B done[0m
-[0m[[0m[31merror[0m] [0m[0m#2 DONE 0.1s[0m
+[0m[[0m[31merror[0m] [0m[0m#2 DONE 0.0s[0m
 [0m[[0m[31merror[0m] [0m[0m#3 [internal] load metadata for docker.io/library/openjdk:8-jre-alpine[0m
 [0m[[0m[31merror[0m] [0m[0m#3 sha256:54c6f6c810fe8adaea295f024fab13dc1a9a70e363a76f4d0bfb6e7ae191ebae[0m
-[0m[[0m[31merror[0m] [0m[0m#3 DONE 14.1s[0m
+[0m[[0m[31merror[0m] [0m[0m#3 DONE 13.1s[0m
 [0m[[0m[31merror[0m] [0m[0m#4 [1/3] FROM docker.io/library/openjdk:8-jre-alpine@sha256:f362b165b870ef129cbe730f29065ff37399c0aa8bcab3e44b51c302938c9193[0m
 [0m[[0m[31merror[0m] [0m[0m#4 sha256:0fa9d77ffba4c0cfb36bec29d2e0b02d36226b626b50f29355d5a97517be8e0b[0m
 [0m[[0m[31merror[0m] [0m[0m#4 DONE 0.0s[0m
 [0m[[0m[31merror[0m] [0m[0m#6 [internal] load build context[0m
-[0m[[0m[31merror[0m] [0m[0m#6 sha256:ae557922ab423ce5bb47314ac933d4c480a0ab7a467b69e58baab2d47d1f5685[0m
+[0m[[0m[31merror[0m] [0m[0m#6 sha256:afbc634b79f31c486a8739fa7a4952a77fb3597b56d89d65a74c340ba3e740e5[0m
 [0m[[0m[31merror[0m] [0m[0m#6 transferring context: 23B 0.0s[0m
-[0m[[0m[31merror[0m] [0m[0m#6 transferring context: 145.66kB 0.1s done[0m
-[0m[[0m[31merror[0m] [0m[0m#6 DONE 0.2s[0m
+[0m[[0m[31merror[0m] [0m[0m#6 transferring context: 2.10MB 0.2s done[0m
+[0m[[0m[31merror[0m] [0m[0m#6 DONE 0.3s[0m
 [0m[[0m[31merror[0m] [0m[0m#5 [2/3] WORKDIR /opt/docker[0m
 [0m[[0m[31merror[0m] [0m[0m#5 sha256:f3f59e8ad8ac9263708c740a121756ee62429c19b6156e19fe50bd0cc8b8f77e[0m
 [0m[[0m[31merror[0m] [0m[0m#5 CACHED[0m
 [0m[[0m[31merror[0m] [0m[0m#7 [3/3] ADD --chown=daemon:daemon opt /opt[0m
-[0m[[0m[31merror[0m] [0m[0m#7 sha256:acbc1dbef31ad64f3f7efedc45eb09c376816af1491b8191415d0c10d76eea1b[0m
-[0m[[0m[31merror[0m] [0m[0m#7 DONE 0.8s[0m
+[0m[[0m[31merror[0m] [0m[0m#7 sha256:6bbd6756e575a9d94fa7513422aa1431dfe3b6ec3b4662a751ad75a508168432[0m
+[0m[[0m[31merror[0m] [0m[0m#7 DONE 1.0s[0m
 [0m[[0m[31merror[0m] [0m[0m#8 exporting to image[0m
 [0m[[0m[31merror[0m] [0m[0m#8 sha256:e8c613e07b0b7ff33893b694f7759a10d42e180f2b4dc349fb57dc6b71dcab00[0m
 [0m[[0m[31merror[0m] [0m[0m#8 exporting layers[0m
-[0m[[0m[31merror[0m] [0m[0m#8 exporting layers 1.7s done[0m
-[0m[[0m[31merror[0m] [0m[0m#8 writing image sha256:f8768fdbb0b1c74f170e982d3bfe9fd70b18c0e57abd021580d8fe9b8b092637 0.1s done[0m
-[0m[[0m[31merror[0m] [0m[0m#8 naming to docker.io/library/todoscalaproject:0.1[0m
-[0m[[0m[31merror[0m] [0m[0m#8 naming to docker.io/library/todoscalaproject:0.1 0.0s done[0m
-[0m[[0m[31merror[0m] [0m[0m#8 DONE 1.8s[0m
+[0m[[0m[31merror[0m] [0m[0m#8 exporting layers 0.4s done[0m
+[0m[[0m[31merror[0m] [0m[0m#8 writing image sha256:288d81779e622e5b50d6d9b67707b325e2228035d67bac8027e8766cfd33b40f done[0m
+[0m[[0m[31merror[0m] [0m[0m#8 naming to docker.io/library/todoscalaproject:0.1 done[0m
+[0m[[0m[31merror[0m] [0m[0m#8 DONE 0.4s[0m
 [0m[[0m[0minfo[0m] [0m[0mBuilt image todoscalaproject with tags [0.1][0m

@@ -34,8 +34,18 @@
     <orderEntry type="library" name="sbt: io.circe:circe-jawn_2.12:0.9.3:jar" level="project" />
     <orderEntry type="library" name="sbt: io.circe:circe-numbers_2.12:0.9.3:jar" level="project" />
     <orderEntry type="library" name="sbt: io.circe:circe-parser_2.12:0.9.3:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.monix:monix-eval_2.12:2.3.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.monix:monix-execution_2.12:2.3.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.monix:monix-types_2.12:2.3.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.monix:shade_2.12:1.10.0:jar" level="project" />
     <orderEntry type="library" name="sbt: net.debasishg:redisclient_2.12:3.30:jar" level="project" />
+    <orderEntry type="library" name="sbt: net.spy:spymemcached:2.12.3:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.commons:commons-pool2:2.8.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.mongodb.scala:mongo-scala-bson_2.12:2.9.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.mongodb.scala:mongo-scala-driver_2.12:2.9.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.mongodb:bson:3.12.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.mongodb:mongodb-driver-async:3.12.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.mongodb:mongodb-driver-core:3.12.2:jar" level="project" />
     <orderEntry type="library" name="sbt: org.reactivestreams:reactive-streams:1.0.3:jar" level="project" />
     <orderEntry type="library" name="sbt: org.scala-lang.modules:scala-java8-compat_2.12:0.8.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.scala-lang.modules:scala-parser-combinators_2.12:1.1.2:jar" level="project" />

@@ -4,7 +4,7 @@ import calculator.CalculatorRepositoryImpl
 import org.slf4j.{Logger, LoggerFactory}
 import server.BootServer
 import todo.{InMemoryToDoRepository, Todo}
-import url.{LocalUrlRepository, Url}
+import url.{DatabaseUrlRepository, LocalUrlRepository, MemcachedUrlRepository, Url}
 
 object Boot extends App {
 
@@ -27,7 +27,9 @@ object Boot extends App {
 
     val todos = new InMemoryToDoRepository(mockTodos)
     val calculator = new CalculatorRepositoryImpl()
-    val urls = new LocalUrlRepository(mockUrls)
+   // val urls = new LocalUrlRepository(mockUrls)
+    val urls = new MemcachedUrlRepository(mockUrls)
+    //  val urls = new DatabaseUrlRepository()
 
     val router = new ToDoRouter(todos, calculator, urls)
 
