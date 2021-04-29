@@ -5,16 +5,12 @@ import server.BootServer
 import java.net.URL
 import java.util.{Base64, UUID}
 import scala.util.hashing.MurmurHash3
+import java.net.MalformedURLException
 
 object UrlUtils {
 
   def encodeMurMur(inputLink: String): String =
     MurmurHash3.stringHash(inputLink).toString
-
-  def decode(shortUrl: String): String =
-    new String(Base64.getDecoder.decode(shortUrl))
-
-  import java.net.MalformedURLException
 
   def isValidURL(urlStr: String): Boolean = try {
     new URL(urlStr)

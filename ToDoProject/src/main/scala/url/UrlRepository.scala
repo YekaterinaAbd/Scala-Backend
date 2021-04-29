@@ -5,8 +5,11 @@ import org.mongodb.scala.MongoClient.DEFAULT_CODEC_REGISTRY
 import org.mongodb.scala._
 import org.mongodb.scala.bson.codecs.Macros._
 import org.mongodb.scala.model.Filters._
+import shade.memcached.{Configuration, Memcached}
 import url.Helpers.GenericObservable
+import url.UrlRepository.UrlDoesNotExist
 
+import scala.concurrent.duration._
 import scala.concurrent.{ExecutionContext, Future}
 
 trait UrlRepository {
@@ -19,53 +22,58 @@ trait UrlRepository {
   def getAll(): Future[Seq[Url]]
 }
 
-class LocalUrlRepository(initialUrls: Seq[Url] = Seq.empty)(implicit ec: ExecutionContext) extends UrlRepository {
+object UrlRepository {
 
-  private var urls: Vector[Url] = initialUrls.toVector
+  final case class UrlDoesNotExist(urlPath: String) extends Exception("")
 
-  override def save(createUrl: CreateUrl): Future[String] = {
-    val url = UrlUtils.createUrl(createUrl)
-    urls = urls :+ url
-    Future.successful(UrlUtils.getShortUrlLink(url.shortUrl))
-  }
-
-  override def get(shortUrl: String): Future[String] = {
-    urls.find(_.shortUrl == shortUrl) match {
-      case None => Future.failed(new Throwable())
-      case Some(url) => Future.successful(url.originalUrl)
-    }
-  }
-
-  override def delete(shortUrl: String): Unit = {
-    urls = urls.filter(_.shortUrl != shortUrl)
-  }
-
-  override def getAll(): Future[Seq[Url]] = Future.successful(urls)
 }
 
 class DatabaseUrlRepository(implicit ec: ExecutionContext) extends UrlRepository {
 
-  val codecRegistry = fromRegistries(fromProviders(classOf[Url]), DEFAULT_CODEC_REGISTRY )
+  private val codecRegistry = fromRegistries(fromProviders(classOf[Url]), DEFAULT_CODEC_REGISTRY)
+  private val MONGO_URI: String = "mongodb+srv://root:admin@cluster0.a8eyh.mongodb.net/test"
 
-  val mongoClient: MongoClient = MongoClient()
-  val database: MongoDatabase = mongoClient.getDatabase("url_db").withCodecRegistry(codecRegistry)
-  val collection: MongoCollection[Url] = database.getCollection("urls")
+  private val memcached = Memcached(Configuration("127.0.0.1:11211"))(ec)
+
+  private val mongoClient: MongoClient = MongoClient(MONGO_URI)
+  private val database: MongoDatabase = mongoClient.getDatabase("urls_db").withCodecRegistry(codecRegistry)
+  private val collection: MongoCollection[Url] = database.getCollection("urls")
 
   override def save(createUrl: CreateUrl): Future[String] = {
-    val url = UrlUtils.createUrl(createUrl)
-    collection.insertOne(url).results()
-    Future.successful(UrlUtils.getShortUrlLink(url.shortUrl))
+    val shortUrl = findUrlInDb(createUrl.original) match {
+      case Some(shortUrl) => shortUrl
+      case None =>
+        val url = UrlUtils.createUrl(createUrl)
+        collection.insertOne(url).results()
+        url.shortUrl
+    }
+    Future.successful(UrlUtils.getShortUrlLink(shortUrl))
   }
 
-  override def get(shortUrl: String): Future[String] = {
-    collection.find(equal("shortUrl", shortUrl)).headResult() match {
-      case x: Url => Future.successful(x.originalUrl)
-      case _ => Future.failed(new Throwable())
+  private def findUrlInDb(originalUrl: String): Option[String] = {
+    collection.find(equal("originalUrl", originalUrl)).headResult() match {
+      case x: Url => Some(x.shortUrl)
+      case _ => None
     }
   }
 
-  override def delete(id: String): Unit = {
-    // collection.deleteOne(eq("id", id))
+  override def get(shortUrl: String): Future[String] = {
+    memcached.awaitGet[String](shortUrl) match {
+      case Some(value) => Future.successful(value)
+      case None =>
+        collection.find(equal("shortUrl", shortUrl)).headResult() match {
+          case url: Url =>
+            memcached.set(url.shortUrl, url.originalUrl, 1.minute)
+            Future.successful(url.originalUrl)
+          case _ =>
+            Future.failed(UrlDoesNotExist(UrlUtils.getShortUrlLink(shortUrl)))
+        }
+    }
+  }
+
+  override def delete(shortUrl: String): Unit = {
+    memcached.delete(shortUrl)
+    collection.deleteOne(equal("shortUrl", shortUrl))
   }
 
   override def getAll(): Future[Seq[Url]] = {

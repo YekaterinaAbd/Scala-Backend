@@ -1,4 +1,2 @@
-[0m[[0m[31merror[0m] [0m[0mD:\ScalaBackendNew\ToDoProject\src\main\scala\url\MemcachedUrlRepository.scala:24:34: Java class java.lang.Throwable is not a value[0m
-[0m[[0m[31merror[0m] [0m[0m      case None => Future.failed(Throwable)[0m
-[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[debug] Acquiring lock on file D:\ScalaBackendNew\ToDoProject\project\target\.sbt-compilation-infos\todoproject-compile\.sbt-idea-lock ...
+[debug] Releasing lock on file D:\ScalaBackendNew\ToDoProject\project\target\.sbt-compilation-infos\todoproject-compile\.sbt-idea-lock.

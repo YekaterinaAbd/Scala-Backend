@@ -2,6 +2,7 @@ package validator
 
 import akka.http.scaladsl.server.{Directive1, Directives}
 import todo.TodoRepository
+import url.UrlRepository
 
 import scala.concurrent.Future
 import scala.util.{Failure, Success}
@@ -23,8 +24,9 @@ trait ErrorDirectives extends Directives {
       provide(t)
     case Failure(error) =>
       val apiError = error match {
-        case a: TodoRepository.TitleAlreadyExists => ApiError.duplicateTitleField
-        case b: TodoRepository.TodoNotFound => ApiError.toDoNotFound
+        case _: TodoRepository.TitleAlreadyExists => ApiError.duplicateTitleField
+        case _: TodoRepository.TodoNotFound => ApiError.toDoNotFound
+        case _: UrlRepository.UrlDoesNotExist => ApiError.urlDoesNotExist
         case _ => ApiError.generic
       }
       complete(apiError.statusCode, apiError.message)

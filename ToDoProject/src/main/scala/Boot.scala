@@ -28,8 +28,8 @@ object Boot extends App {
     val todos = new InMemoryToDoRepository(mockTodos)
     val calculator = new CalculatorRepositoryImpl()
    // val urls = new LocalUrlRepository(mockUrls)
-    val urls = new MemcachedUrlRepository(mockUrls)
-    //  val urls = new DatabaseUrlRepository()
+   // val urls = new MemcachedUrlRepository(mockUrls)
+      val urls = new DatabaseUrlRepository()
 
     val router = new ToDoRouter(todos, calculator, urls)
 

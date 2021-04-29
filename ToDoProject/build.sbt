@@ -40,7 +40,7 @@ libraryDependencies ++= Seq(
 
   "net.debasishg" %% "redisclient" % "3.30",
 
-  "org.mongodb.scala" %% "mongo-scala-driver" % "2.9.0",
+  "org.mongodb.scala" %% "mongo-scala-driver" % "4.2.3",
 
   "io.monix" %% "shade" % "1.10.0"
 
